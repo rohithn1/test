@@ -101,6 +101,8 @@ class SLAM(object):
     good_pts4d &= np.abs(pts4d[:, 3]) != 0
     pts4d /= pts4d[:, 3:]       # homogeneous 3-D coords
 
+    var = "some other stuff was added here"
+
     # adding new points to the map from pairwise matches
     new_pts_count = 0
     for i,p in enumerate(pts4d):
